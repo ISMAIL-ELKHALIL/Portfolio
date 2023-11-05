@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67cc795b8e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!--!--------------------------NAV-BAR SECTION-------------------------->
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul id="drawer">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="close_drawer()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="bars-icon" onclick="open_drawer()"></i>
+
+            </nav>
+
+            <div class="header-text">
+                <p>Web/Mobile Developer</p>
+                <h1>Hi, I'm <span>Ismail</span><br> Elkhalil from Morocco</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!--!----------------------------ABOUT SECTION------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/ME.jpg" alt="User images">
+                </div>
+
+                <div class="about-col-2">
+
+                    <h1 class="sub-title">About me</h1>
+                    <br>
+                    <p>Junior  Full Stack Developer committed to building, developing Web
+                        and
+                     Mobile   Applications.<br><br>Self-directed and energetic with performance in both autonomous or
+                        collaborative environments.
+                        <br><br>Fan of Football, outdoor activities, video games, and coding of course.
+                    </p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="open_tab('skills')">Skills</div>
+                        <div class="tab-links" onclick="open_tab('experience')">Experience</div>
+                        <div class="tab-links" onclick="open_tab('education')">
+                            Education</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span>Web Development</span><br>Building Web Applications</li>
+
+                            <li><span>Mobile Development</span><br> Building Android/IOS Applications</li>
+                            </ul>
+
+                    </div>
+
+                    <div class="tab-contents    "  id="experience">
+
+                        <ul>
+                         
+                            <li><span>Foody</span><br> Mobile Application with Flutter framework </li>
+
+                            <li><span>I-shop</span><br> Web Application with MERN stack </li>
+
+
+                        </ul>
+
+                        </ul>
+
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li><span>2022</span><br> Bachelor's Degree of Computer Sciences and Mathematics</li>
+
+                            <li><span>2018</span><br> High School Degree of Sciences and Technologies of Electricity
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--!-----------------------------SERVICES SECTION-------------------------->
+
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My services</h1>
+
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <br>
+                    <p>Building small and medium web applications with React, custom plugins, features, animations, and coding interactive layouts.     </p><br>
+                    <a >Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Mobile Development</h2>
+                    <br>
+                    <p>Building smart user interfaces and useful interactions, developing rich seamless Android applications  experience.
+                    </p><br>
+                    <a>Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--!-----------------------------PROJECTS SECTION ---------------------------->
+    <div id="projects">
+
+        <div class="container">
+
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+
+                    <img src="images/work-4.png" alt="project-1">
+
+                    <div class="project-description">
+                        <h3>E-menu</h3>
+                        <p>Enhance your guest experience with QR Mobile ordering solutions. Let your customers view your branded digital menu, place their orders and pay the bills to avoid errors and save time. </p>
+                        <a href="https://www.onlineemenu.com/online-food-ordering-system.php" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+
+                    <img src="images/work-3.png" alt="project-2">
+
+                    <div class="project-description">
+                        <h3>Chinelle Rojas</h3>
+                        <p>Self-portrait photographer, logo designer, and entrepreneur with a very cool portfolio website. Enter in and you feel like you’ve stepped into her world.</p>
+                        <a href="https://www.chinellero.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+
+                    <img src="images/work-2.png" alt="project-2" >
+
+                    <div class="project-description">
+                        <h3>Skullcandy</h3>
+                        <p>Discover life at full volume with headphones, earbuds, speakers & more. Skullcandy is one-stop shop for new music, culture & audio.</p>
+                        <a href="https://www.skullcandy.eu/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="show-more-btn">Show More</a>
+
+        </div>
+    </div>
+    <!--!-----------------------CONTACT SECTION------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>&nbsp; ismailelkhalil13@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>&nbsp;06 29 687785</p>
+                    <div class="social-media-icons">
+                        <a href="https://twitter.com/ISMAILELKHALIL_" alt="Twitter" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ismail-elkhalil/" alt="Linkedin" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/+212629687785" alt="Whatsapp" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/ISMAIL_ELKHALIL" alt="Telegram" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                    </div>
+                    <a href="./files/ISMAIL_ELKHALIL_CV.pdf" class="download-btn" download="./files/ISMAIL_ELKHALIL_CV.pdf">Download CV</a>
+                </div>
+
+                <div class="contact-right " >
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required >
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button class="submit-btn" type="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+    <div class="copyright">
+        <p>Copyright © 2023 MSRM Association <i class="fa-solid fa-laptop-code"></i>MSRM.org</p>
+
+    </div>
+
+</body>
+
+
+<!--!------------JavaScript Code--------------->
+<script>
+    /* To make the Tabs and tabs content animated */
+
+    let tab_links = document.getElementsByClassName("tab-links");
+    let tab_contents = document.getElementsByClassName("tab-contents");
+
+    function open_tab(tab_name) {
+
+        for (tab_link of tab_links) {
+            tab_link.classList.remove("active-link");
+        }
+
+        for (tab_content of tab_contents) {
+            tab_content.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab_name).classList.add("active-tab");
+    };
+
+    /*To make the Drawer Visible Or Hidden */
+
+    let drawer = document.getElementById("drawer");
+    let bars_icon = document.getElementById("bars-icon");
+
+    function open_drawer() {
+        drawer.style.right = "0px";
+        bars_icon.style.opacity = "0";
+    }
+
+    function close_drawer() {
+        drawer.style.right = "-200px";
+        bars_icon.style.opacity = "1";
+    }
+
+  // for smooth scrolling with  media query change 
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    });
+  });
+
+   
+
+
+</script>
+
+
+ 
+
+<script>
+
+    /* ! This script is to sent the info of the form to a Google sheet*/
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPGXVr2WX2QxFk1qfIxKW_FJ3Gq-SnC2l85O0RzzvK0jT7ERSIgEuGSO1NcPT3Mo54/exec';
+const form = document.forms['submit-to-google-sheet'];
+let messageCount = 0; // Initialize the message count
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  if (messageCount < 3) {
+    // Send the message if the limit has not been reached
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        alert('Message Sent Successfully');
+        console.log('Success!', response);
+        messageCount++; // Increment the message count
+      })
+      .catch(error => {
+        alert('Error sending message: ' + error.message);
+        console.error('Error!', error);
+      });
+  } else {
+    alert('Message limit exceeded. Please try again later.');
+  }
+});
+
+
+
+</script>
+
+</html>
+
+
